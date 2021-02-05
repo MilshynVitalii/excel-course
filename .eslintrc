@@ -8,8 +8,9 @@
     "rules": {
         "semi": "off",
         "arrow-parens": "off",
-        "comma-dangle":"off",
-        "require-jsdoc":"off"
+        "comma-dangle": "off",
+        "require-jsdoc": "off",
+        "linebreak-style": "off"
     },
     "extends": "google"
 }
