@@ -13,6 +13,10 @@ export class TableSelection {
     this.current = $el;
   }
 
+  get selectedIds() {
+    return this.groop.map($el => $el.id());
+  }
+
   clear() {
     this.groop.forEach($el => $el.removeClass(TableSelection.className));
     this.groop.length = 0;
@@ -22,5 +26,9 @@ export class TableSelection {
     this.clear();
     this.groop = $groop;
     this.groop.forEach($el => $el.addClass(TableSelection.className));
+  }
+
+  applyStyle(style) {
+    this.groop.forEach($el => $el.css(style));
   }
 }
